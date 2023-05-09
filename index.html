@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Quiz</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
 		<link rel="stylesheet" href="/assets/style.css" />
 	</head>
 	<body>
@@ -14,16 +18,38 @@
 			<body>
 				<header>
 					<p id="timer">Time Left: <span id="time"></span></p>
+					<button class="waves-effect waves-light btn big"><a href="/high-score.html">View High Scores</a></button>
 				</header>
-				<div id="quiz">
-					<h2>Quiz</h2>
+				<div class="container center" id="quiz">
+					<h1>Quiz</h1>
+
+					<p id="intro">
+						This quiz consists of 5 questions. You will have 60 seconds to
+						answer all 5 questions. If you answer incorrectly time will be taken
+						off the clock.
+					</p>
 					<p id="question"></p>
 					<div id="choices"></div>
-					<div id="user-data"></div>
-					<button id="submit">Start</button>
+					<div id="user-score"></div>
+					<a id="start-btn" class="waves-effect waves-light btn-large big"
+						>Start Quiz</a
+					>
+					<br />
+					<br />
+					<br />
+
+					<div id="input-div">
+						<h3>Please Enter Your Initials:</h3>
+						
+						<input type="text" id="textarea1" max="3">
+						<button id="submit-score" class="waves-effect waves-light btn"
+							>Submit Score</button>
+						
+					</div>
 				</div>
 
-				<script src="/assets/script.js"></script>
+				<script src="/assets/questions.js"></script>
+				<script src="/assets/newscript.js"></script>
 			</body>
 		</html>
 	</body>

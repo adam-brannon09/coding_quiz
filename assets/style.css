@@ -3,16 +3,41 @@
 }
 
 #timer{
+    font-size: 2rem;
+}
+
+#intro{
     font-size: 1.5rem;
 }
 
-#quiz{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#question{
+    font-size: 2rem;
+}
+
+a{
+    margin: 0 25px;
+
+}
+
+#textarea1{
+    width: 200px;
     font-size: 3rem;
-    border: black solid 2px;
+    padding: 30px;
+}
 
-};
+li {
+    padding: 5px;
+    list-style: decimal inside none;
+  }
 
+  #highscores{
+    font-size: 2rem;
+  }
+
+  .big{
+    font-size: 1.5rem;
+  }
+
+  a{
+    color: white;
+  }
